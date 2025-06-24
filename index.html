@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Earth Foundation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6294B2;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #266430;
+        }
+        .hero-background {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('leaf_image.jpg') no-repeat center center;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #FFC107, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            @apply bg-yellow-500 text-gray-900 px-6 py-3 rounded-full hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-blue-400 text-white px-6 py-3 rounded-full hover:bg-blue-500 transition duration-300 ease-in-out shadow-lg transform hover:scale-105;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-green-700 text-white p-4 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="leaf_logo.jpg" alt="LEAF Logo" class="w-16 h-16 rounded-full">
+                <span class="text-2xl font-bold">Living Earth Foundation</span>
+            </a>
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About Us</a></li>
+                <li><a href="#work" class="hover:text-yellow-400 transition duration-300">Our Work</a></li>
+                <li><a href="#donate" class="btn-primary">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-background text-white min-h-screen flex items-center justify-center text-center p-4">
+        <div class="max-w-4xl space-y-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                Protecting Our Planet, <span class="text-gradient">Advocating for Justice</span>
+            </h1>
+            <p class="text-xl md:text-2xl mt-4 max-w-2xl mx-auto">
+                The Living Earth Foundation is dedicated to safeguarding India's environment and empowering communities through legal action in High Courts and the NGT.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+                <a href="#work" class="btn-secondary">Explore Our Cases</a>
+                <a href="#donate" class="btn-primary">Support Our Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center text-green-700 mb-12">About The Living Earth Foundation</h2>
+        <div class="grid md:grid-cols-1 gap-12 items-center">
+            <div class="space-y-6">
+                <p class="text-lg leading-relaxed">
+                    The Living Earth Foundation (LEAF) was founded by <strong class="text-green-700">Advocate Sreeja Chakraborty</strong> with a clear vision: to be a formidable legal voice for environmental protection and justice in India. Sreeja, an accomplished environmental lawyer, established LEAF in Bengaluru to address pressing ecological concerns through strategic litigation.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Our foundation operates at the forefront of environmental law, taking on critical cases in the High Courts and the National Green Tribunal (NGT). We believe in empowering local communities and standing firm against powerful corporations and unsustainable development projects that threaten our natural heritage.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Since its inception, LEAF has provided legal representation in over 20 public interest cases, working tirelessly with civil society groups, environmental activists, affected communities, and concerned citizens across Karnataka, Goa, and Kerala.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work/Cases Section -->
+    <section id="work" class="bg-gray-100 py-16 px-4">
+        <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Our Impactful Work & Landmark Cases</h2>
+        <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Case 1: Hubballi-Ankola Railway Line -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-400 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Hubballi-Ankola Railway Line</h3>
+                <p class="text-gray-700 mb-4">
+                    LEAF actively opposed the proposed Hubballi-Ankola railway line, which threatened to cause extensive deforestation and irreversible damage to the rich biodiversity of the Western Ghats. Our legal interventions aim to protect this critical ecological hotspot.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Case 2: Honnavara Port Expansion -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-yellow-500 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Honnavara Port Expansion</h3>
+                <p class="text-gray-700 mb-4">
+                    We've taken a stand against the ecologically sensitive Honnavara port expansion project, which poses threats to coastal ecosystems, marine life, and the livelihoods of local fishing communities. Our work includes highlighting human rights violations and environmental damage.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Case 3: Sharavati Pumped Storage Project -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-green-400 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Sharavati Pumped Storage Project</h3>
+                <p class="text-gray-700 mb-4">
+                    LEAF has filed multiple representations regarding the Sharavati pumped storage project, particularly concerning its impact on the Eco-Sensitive Zone (ESZ) of the Sharavathi Lion-tailed Macaque Sanctuary and the Jog Falls area. We advocate for sustainable tourism and development.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Case 4: Karmal Ghat Highway Expansion, Goa -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-400 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Karmal Ghat Highway Expansion</h3>
+                <p class="text-gray-700 mb-4">
+                    One of LEAF's early successes was halting the indiscriminate felling of 30,000 trees for a highway expansion through Karmal Ghat, Goa, in 2020. We ensured an alternate alignment study and cost-benefit analysis were conducted, protecting this eco-sensitive area.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Case 5: Lake Encroachment & Rainwater Channels -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-yellow-500 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Lake Encroachment Case</h3>
+                <p class="text-gray-700 mb-4">
+                    We assisted communities in a significant case against a real estate company that encroached upon a dry lake bed, blocking 15 rainwater feeder channels. Our involvement led to an inspection by the Karnataka Tank Conservation Authority and helped build a strong legal case.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+
+            <!-- Case 6: Bannerghatta National Park ESZ -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-green-400 card-hover transition duration-300">
+                <h3 class="text-2xl font-semibold text-green-800 mb-3">Bannerghatta ESZ Litigation</h3>
+                <p class="text-gray-700 mb-4">
+                    LEAF has filed a Public Interest Litigation (PIL) in the Karnataka High Court concerning the Krishnadoddi Bypass project of KRDCL, which impacts the Eco-Sensitive Zone (ESZ) of Bannerghatta National Park. We strive to protect this vital urban lung.
+                </p>
+                <a href="#" class="text-blue-600 hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="bg-green-600 text-white py-16 px-4">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-4xl font-bold mb-6">Support Our Mission</h2>
+            <p class="text-xl leading-relaxed mb-8">
+                Your generous contributions empower the Living Earth Foundation to continue its critical work defending India's environment and advocating for the rights of its people. Every donation, big or small, makes a tangible difference in our legal battles against environmental degradation.
+            </p>
+            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg">
+                <h3 class="text-3xl font-semibold text-green-700 mb-6">How Your Donation Helps:</h3>
+                <ul class="list-disc list-inside text-lg text-left mb-8 space-y-3">
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Funds legal research and documentation for critical cases.</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Supports court fees and legal proceedings.</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Enables on-ground investigations and community engagement.</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Helps us advocate for stronger environmental policies.</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Ensures access to justice for marginalized communities.</li>
+                </ul>
+                <h3 class="text-2xl font-semibold text-blue-700 mb-4">Donate Directly:</h3>
+                <p class="text-lg mb-6">
+                    We accept donations via bank transfer. Please find our details below:
+                </p>
+                <div class="bg-gray-100 p-6 rounded-lg text-left text-gray-900 shadow-inner">
+                    <div class="flex flex-col items-center mt-4 mb-4">
+                      <p class="mb-2"><strong class="text-green-700">UPI ID : livingearthfoundation@upi </strong></p>
+                      <p class="mb-2"><strong class="text-green-700">Account Name: Living Earth Foundation </strong></p>
+                      <img src="leaf_qr.png" alt="QR Code for Donation" class="w-96 h-96 rounded-lg shadow-md border border-gray-200"/>
+                    </div>
+                </div>
+                <p class="text-lg mt-8">
+                    For other donation methods or queries, please <a href="#contact" class="text-blue-600 hover:underline font-semibold">contact us</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Optional but good to include) -->
+    <section id="contact" class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center text-green-700 mb-12">Get in Touch</h2>
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-400">
+            <p class="text-center text-lg mb-6 text-gray-700">
+                Have questions or want to collaborate? Reach out to us.
+            </p>
+            <form class="space-y-6" action="mailto:livingearthfoundation@gmail.com" method="post" enctype="text/plain">
+                <div>
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="your@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your message here..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary w-full sm:w-auto hover:text-green-400 transition duration-300">Send Message</button>
+                </div>
+            </form>
+            <p class="text-center text-gray-600 mt-8">
+                You can reach us at: <br>
+                <a href="mailto:livingearthfoundation@gmail.com" class="text-blue-600 hover:underline">livingearthfoundation@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2024 Living Earth Foundation. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-4 text-sm">Designed with passion for a greener future.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
